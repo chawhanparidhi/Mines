@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.controls input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.controls .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.controls .btn:hover {
+    background-color: #555;
+}
+
+#score-container {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 70px); /* Adjust cell size here */
+    grid-template-rows: repeat(5, 70px); /* Adjust cell size here */
+    gap: 5px;
+}
+
+.cell {
+    border: 1px solid #555;
+    cursor: pointer;
+    position: relative;
+    background-color: #444;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+
